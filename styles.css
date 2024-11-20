@@ -1,0 +1,222 @@
+/* Navigation Bar */
+.bx--header {
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+    border-bottom: 2px solid #333333;
+}
+
+.bx--header__menu-bar {
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    list-style: none;
+}
+
+.bx--header__menu-link {
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.bx--header__menu-link:hover,
+.bx--header__menu-link:focus {
+    color: #4589ff;
+    transform: scale(1.1);
+}
+
+.bx--header__menu-link.active {
+    color: #0353e9;
+    font-weight: bold;
+    border-bottom: 2px solid #0353e9;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #001f4d, #003366);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.hero-section p {
+    margin-bottom: 30px;
+    font-size: 1.25rem;
+}
+
+.bx--btn-set {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Buttons */
+.bx--btn--primary {
+    background-color: #0f62fe;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.bx--btn--primary:hover {
+    background-color: #0353e9;
+    transform: translateY(-3px);
+}
+
+.bx--btn--secondary {
+    background-color: #e0e0e0;
+    color: black;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.bx--btn--secondary:hover {
+    background-color: #c6c6c6;
+    transform: translateY(-3px);
+}
+
+/* Features Section */
+.features-section {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+.features-section .feature-card {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.features-section .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Installation Section */
+.installation-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.installation-section .bx--tile {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+.about-section .architecture-image {
+    display: block;
+    margin: 20px auto; /* Centers the image horizontally */
+    width: 40%; /* Default width for medium-sized screens */
+    max-width: 800px; /* Maximum size for larger screens */
+    min-width: 300px; /* Minimum size for smaller screens */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    padding: 10px;
+}
+
+
+.about-section .bx--tile {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* RL Section */
+.rl-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Support Section */
+.support-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.support-section .bx--tile {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+    color: #8d8d8d;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Center Titles */
+.text-center {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Fade-in Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.back-to-top:hover {
+    opacity: 0.8;
+}
