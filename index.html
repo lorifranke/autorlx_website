@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoRL X Labs</title>
+    <!-- Carbon Design System CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/@carbon/styles/css/styles.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bx--body">
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top bx--btn bx--btn--primary" style="display:none;">
+        ↑ Back to Top
+    </button>
+
+    <!-- Top Navigation -->
+    <nav class="bx--header bx--header--fixed">
+        <div class="bx--header__nav">
+            <ul class="bx--header__menu-bar">
+                <li class="bx--header__menu-item">
+                    <a href="#rl" class="bx--header__menu-link">What is RL?</a>
+                </li>
+                <li class="bx--header__menu-item">
+                    <a href="#features" class="bx--header__menu-link">Features</a>
+                </li>
+                <li class="bx--header__menu-item">
+                    <a href="#installation" class="bx--header__menu-link">Installation</a>
+                </li>
+                <li class="bx--header__menu-item">
+                    <a href="#about" class="bx--header__menu-link">About</a>
+                </li>
+                <li class="bx--header__menu-item">
+                    <a href="#support" class="bx--header__menu-link">Support</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="bx--content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="bx--grid bx--grid--full-width">
+                <div class="bx--row">
+                    <div class="bx--col-lg-12 text-center">
+                        <h1 class="bx--type-display-04" id="hero-title"></h1>
+                        <p class="bx--type-body-long-02">
+                            Simplify Reinforcement Learning (RL) processes with a dynamic, web-based platform designed
+                            to visualize and optimize decision-making tasks.
+                        </p>
+                        <div class="bx--btn-set">
+                            <button class="bx--btn bx--btn--primary" onclick="window.location.href='#features'">Learn
+                                More</button>
+                            <button class="bx--btn bx--btn--secondary"
+                                onclick="window.location.href='#installation'">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RL Overview Section -->
+        <section id="rl" class="rl-section fade-in">
+            <div class="bx--grid bx--grid--narrow">
+                <h2 class="bx--type-expressive-heading-04 text-center">What is Reinforcement Learning?</h2>
+                <p class="bx--type-body-long-02">
+                    Reinforcement learning (RL) is a method in machine learning for addressing sequential
+                    decision-making problems. RL agents learn optimal behaviors through trial and error, receiving
+                    feedback from their environment. Applications include autonomous driving, robotics, healthcare,
+                    finance, and gaming.
+                </p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section fade-in">
+            <div class="bx--grid bx--grid--narrow">
+                <h2 class="bx--type-expressive-heading-04 text-center">Features</h2>
+                <div class="bx--row">
+                    <div class="bx--col-md-4">
+                        <div class="bx--tile feature-card">
+                            <h4 class="bx--type-expressive-heading-05">Interactive RL Visualization</h4>
+                            <p>
+                                AutoRL X introduces RL visualizations and web-based real-time tools to better understand
+                                RL agent behaviors and performance.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bx--col-md-4">
+                        <div class="bx--tile feature-card">
+                            <h4 class="bx--type-expressive-heading-05">Open-Source Expansion</h4>
+                            <p>
+                                With frameworks like ARLO and Svelte.js, AutoRL X ensures a smooth and extensible user
+                                experience for both researchers and practitioners.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bx--col-md-4">
+                        <div class="bx--tile feature-card">
+                            <h4 class="bx--type-expressive-heading-05">Real Applications</h4>
+                            <p>
+                                Explore real-world applications, such as optimizing tasks for autonomous driving,
+                                robotics, healthcare, production finance, and gaming.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Installation Section -->
+        <section id="installation" class="installation-section fade-in">
+            <div class="bx--grid bx--grid--narrow">
+                <h2 class="bx--type-expressive-heading-04 text-center">Installation Overview</h2>
+                <div class="bx--row">
+                    <div class="bx--col-lg-12">
+                        <div class="bx--tile">
+                            <p class="bx--type-body-long-02">
+                                AutoRL X can be deployed quickly using Docker for a hassle-free setup. Alternatively,
+                                advanced users can run it in developer mode for custom configurations. Detailed
+                                installation instructions are available in our <a
+                                    href="https://github.com/lorifranke/autorlx" target="_blank"
+                                    class="text-primary">GitHub repository</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section fade-in">
+            <div class="bx--grid bx--grid--narrow">
+                <h2 class="bx--type-expressive-heading-04 text-center">About AutoRL X</h2>
+                <div class="bx--row">
+                    <div class="bx--col-lg-12">
+                        <div class="bx--tile">
+                            <p class="bx--type-body-long-02">
+                                AutoRL X is an open-source platform designed to simplify reinforcement learning (RL)
+                                processes. It provides real-time web-based visualizations and intuitive interfaces for
+                                decision
+                                optimization, making RL accessible and effective for diverse applications.
+                            </p>
+                            <p class="bx--type-body-long-02">
+                                By bridging the gap between complex RL workflows and user-friendly tools, AutoRL X
+                                empowers
+                                industries such as healthcare, robotics, and autonomous systems to tackle real-world
+                                challenges
+                                with confidence and efficiency.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bx--row">
+                    <div class="bx--col-md-6">
+                        <div class="bx--tile">
+                            <h4 class="bx--type-expressive-heading-05">Innovative and Extensible</h4>
+                            <p class="bx--type-body-long-02">
+                                Built on frameworks like <a href="https://github.com/arlo-lib/ARLO" target="_blank"
+                                    class="text-primary">ARLO</a> and <a href="https://svelte.dev/" target="_blank"
+                                    class="text-primary">Svelte.js</a>, AutoRL X integrates seamlessly with
+                                industry-standard RL libraries such as
+                                <a href="https://github.com/openai/gym" target="_blank" class="text-primary">OpenAI
+                                    Gym</a> and
+                                <a href="https://github.com/Farama-Foundation/Gymnasium" target="_blank"
+                                    class="text-primary">Gymnasium</a>.
+                            </p>
+                            <p class="bx--type-body-long-02">
+                                For more information, explore our <a href="https://github.com/lorifranke/autorlx"
+                                    target="_blank" class="text-primary">GitHub repository</a> or read our
+                                <a href="https://dl.acm.org/doi/10.1145/3670692" target="_blank"
+                                    class="text-primary">ACM publication</a>.
+                            </p>
+                            <img src="system_architecture.png" alt="AutoRL X System Architecture"
+                                class="architecture-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Support Section -->
+        <section id="support" class="support-section fade-in">
+            <div class="bx--grid bx--grid--narrow">
+                <h2 class="bx--type-expressive-heading-04 text-center">Need Help?</h2>
+                <div class="bx--row">
+                    <div class="bx--col-lg-12">
+                        <div class="bx--tile">
+                            <p class="bx--type-body-long-02">
+                                For support or inquiries, reach out to us at <a href="mailto:support@autorlx.com"
+                                    class="text-primary">support@autorlx.com</a> or write an issue in our GitHub
+                                repository.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="bx--grid bx--grid--full-width">
+                <p>&copy; <span id="current-year"></span> AutoRL X Labs. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- JavaScript Effects -->
+    <script>
+        // Dynamically set the current year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Smooth Scrolling
+        document.querySelectorAll('.bx--header__menu-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                document.getElementById(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Fade-in Animations on Scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        fadeElements.forEach(el => observer.observe(el));
+
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Typing Animation in Hero Section
+        const text = "AutoRL X Labs";
+        const heroTitle = document.getElementById('hero-title');
+        let index = 0;
+
+        function typeEffect() {
+            if (index < text.length) {
+                heroTitle.textContent += text[index];
+                index++;
+                setTimeout(typeEffect, 100);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', typeEffect);
+
+        // Highlight Active Nav Link
+        const navLinks = document.querySelectorAll('.bx--header__menu-link');
+        const sections = document.querySelectorAll('section');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 60) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
