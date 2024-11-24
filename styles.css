@@ -299,3 +299,18 @@
 .dashboard-section .dashboard-image:hover {
     transform: scale(1.02);
 }
+
+.dashboard-caption {
+    color: #ffffff;
+    max-width: 90%;
+    margin: 30px auto 0;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.dashboard-caption strong {
+    color: #ffffff;
+    opacity: 1;
+}
