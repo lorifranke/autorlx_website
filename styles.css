@@ -92,12 +92,12 @@
 
 /* Features Section */
 .features-section {
-    padding: 60px 20px;
+    padding: 40px 30px;
     background-color: #f4f4f4;
 }
 
 .features-section .feature-card {
-    padding: 20px;
+    padding: 25px 30px;
     background-color: white;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
@@ -112,15 +112,35 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.features-section .dashboard-image {
+    display: block;
+    margin: 40px auto 20px;  /* Top spacing from features, centered horizontally */
+    width: 85%;  /* Large but not full width */
+    max-width: 1200px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;  /* Light background for dark image */
+    padding: 16px;  /* Creates a frame effect */
+    border: 1px solid rgba(255, 255, 255, 0.1);  /* Subtle border */
+}
+
+/* Adjust for different screen sizes */
+@media screen and (max-width: 768px) {
+    .features-section .dashboard-image {
+        width: 95%;
+        padding: 12px;
+    }
+}
+
 /* Installation Section */
 .installation-section {
-    padding: 60px 20px;
+    padding: 40px 30px;
     background-color: #ffffff;
 }
 
 .installation-section .bx--tile {
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 25px 30px;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -128,7 +148,7 @@
 
 /* About Section */
 .about-section {
-    padding: 60px 20px;
+    padding: 40px 30px;
     background-color: #f4f4f4;
 }
 
@@ -145,7 +165,7 @@
 
 .about-section .bx--tile {
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 25px 30px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -153,7 +173,7 @@
 
 /* RL Section */
 .rl-section {
-    padding: 60px 20px;
+    padding: 40px 30px;
     background-color: #f9f9f9;
     border-radius: 8px;
     text-align: center;
@@ -161,13 +181,13 @@
 
 /* Support Section */
 .support-section {
-    padding: 60px 20px;
+    padding: 40px 30px;
     background-color: #ffffff;
 }
 
 .support-section .bx--tile {
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 25px 30px;
     background-color: #f4f4f4;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -219,4 +239,63 @@
 
 .back-to-top:hover {
     opacity: 0.8;
+}
+
+/* Medium screens */
+@media screen and (min-width: 768px) {
+    .features-section, .installation-section, .about-section, .rl-section, .support-section {
+        padding: 40px 50px;
+    }
+}
+
+/* Large screens */
+@media screen and (min-width: 1200px) {
+    .features-section, .installation-section, .about-section, .rl-section, .support-section {
+        padding: 40px 60px;
+    }
+}
+
+.features-section .feature-card,
+.installation-section .bx--tile,
+.about-section .bx--tile,
+.support-section .bx--tile {
+    margin: 20px 0;  /* Standardized margin for all section content */
+    padding: 25px 30px;
+}
+
+/* Add consistent title spacing */
+.features-section h2,
+.installation-section h2,
+.about-section h2,
+.rl-section h2,
+.support-section h2 {
+    margin-bottom: 20px;  /* Consistent spacing below titles */
+}
+
+.dashboard-section {
+    background-color: #000;
+    width: 100%;
+    padding: 40px 0;
+    margin: 0;
+}
+
+.dashboard-section .dashboard-image {
+    display: block;
+    width: 60%;
+    max-width: 1400px;
+    margin: 0 auto;
+    transition: transform 0.3s ease-out, opacity 0.5s ease-in;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Fade up animation when visible */
+.dashboard-section .dashboard-image.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Optional hover effect */
+.dashboard-section .dashboard-image:hover {
+    transform: scale(1.02);
 }

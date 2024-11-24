@@ -112,6 +112,11 @@
             </div>
         </section>
 
+        <!-- Dashboard Section -->
+        <section class="dashboard-section">
+            <img src="autorlx_dashboard.png" alt="AutoRLX Dashboard" class="dashboard-image">
+        </section>
+
         <!-- Installation Section -->
         <section id="installation" class="installation-section fade-in">
             <div class="bx--grid bx--grid--narrow">
@@ -291,6 +296,19 @@
                 }
             });
         });
+
+        // Dashboard image animation
+        const dashboardImage = document.querySelector('.dashboard-section .dashboard-image');
+        const dashboardObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    dashboardObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        dashboardObserver.observe(dashboardImage);
     </script>
 </body>
 
