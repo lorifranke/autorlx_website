@@ -395,3 +395,19 @@ h3 {
         font-size: 1.2rem;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .bx--header__menu-link {
+        font-size: 0.9rem;
+        padding: 0 0.8rem;  /* Reduce horizontal padding */
+    }
+
+    .bx--header__menu-bar {
+        gap: 0.5rem;  /* Reduce gap between items */
+    }
+
+    /* Specifically target "What is RL?" to prevent wrapping */
+    .bx--header__menu-link {
+        white-space: nowrap;
+    }
+}
