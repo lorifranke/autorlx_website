@@ -19,6 +19,20 @@
 
     <!-- Top Navigation -->
     <nav class="bx--header bx--header--fixed">
+        <button class="hamburger-menu" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="#rl">What is RL?</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </div>
         <div class="bx--header__nav">
             <ul class="bx--header__menu-bar">
                 <li class="bx--header__menu-item">
@@ -341,6 +355,22 @@
         }, { threshold: 0.2 });
 
         dashboardMedia.forEach(el => dashboardObserver.observe(el));
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.querySelector('.hamburger-menu');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            // Debug log
+            console.log('Hamburger:', hamburger);
+            console.log('Mobile Menu:', mobileMenu);
+
+            hamburger.addEventListener('click', () => {
+                console.log('Hamburger clicked');  // Debug log
+                hamburger.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+                console.log('Menu active:', mobileMenu.classList.contains('active'));  // Debug log
+            });
+        });
     </script>
 </body>
 

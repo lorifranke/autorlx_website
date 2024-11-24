@@ -2,8 +2,14 @@
 .bx--header {
     background-color: black;
     color: white;
-    padding: 20px 40px;
+    padding: clamp(10px, 2vw, 20px) clamp(20px, 4vw, 40px);
     border-bottom: 2px solid #333333;
+    width: 100vw;  /* Ensure full viewport width */
+    overflow-x: hidden;  /* Prevent horizontal scroll */
+}
+
+.bx--header__nav {
+    width: 100%;
 }
 
 .bx--header__menu-bar {
@@ -11,6 +17,8 @@
     gap: 30px;
     margin: 0;
     list-style: none;
+    padding: 0;
+    justify-content: center;  /* Center items */
 }
 
 .bx--header__menu-link {
@@ -301,11 +309,20 @@
     width: 100%;
 }
 
-.dashboard-image, .demo-gif {
-    width: 50%;
+.media-container .dashboard-image,
+.media-container .demo-gif {
+    width: 60%;
     max-width: 1400px;
+    margin: 0 auto;
     height: auto;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+    .media-container .dashboard-image,
+    .media-container .demo-gif {
+        width: 95%;
+    }
 }
 
 .dashboard-caption {
@@ -321,9 +338,8 @@
 }
 
 @media screen and (max-width: 768px) {
-    .dashboard-image, .demo-gif,
     .dashboard-caption {
-        width: 95%;    /* Both image and caption expand on mobile */
+        width: 95%;
     }
 }
 
@@ -397,17 +413,130 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
+    /* Show hamburger */
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* Hide regular nav by default on mobile */
+    .bx--header__nav {
+        display: none;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #001f4d;
+        padding: 1rem 0;
+    }
+
+    /* Show nav when active */
+    .bx--header__nav.active {
+        display: block;
+    }
+
+    /* Stack the menu items vertically */
+    .bx--header__menu-bar {
+        flex-direction: column;
+    }
+
     .bx--header__menu-link {
-        font-size: 0.9rem;
-        padding: 0 0.8rem;  /* Reduce horizontal padding */
+        padding: 1rem 20px;
+        display: block;
+    }
+}
+
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .bx--header__nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--primary-blue);
+        padding: 1rem 0;
+    }
+
+    .bx--header__nav.active {
+        display: block;
     }
 
     .bx--header__menu-bar {
-        gap: 0.5rem;  /* Reduce gap between items */
+        flex-direction: column;
+        padding: 0;
     }
 
-    /* Specifically target "What is RL?" to prevent wrapping */
     .bx--header__menu-link {
-        white-space: nowrap;
+        padding: 0.8rem 20px;
+        font-size: 0.9rem;
+    }
+
+    /* Hamburger animation */
+    .hamburger-menu.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-menu.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 48px;
+    left: 0;
+    width: 100%;
+    background: black;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu li {
+    margin: 1rem 0;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+@media (min-width: 768px) {
+    .hamburger-menu {
+        display: none;
     }
 }
