@@ -115,13 +115,24 @@
 
         <!-- Dashboard Section -->
         <section class="dashboard-section">
-            <img src="autorlx_dashboard.png" alt="AutoRLX Dashboard" class="dashboard-image">
-            <p class="dashboard-caption">
-                Running a gym environment with different RL algorithms in AutoRL X's agent leaderboard. User can select different agent configurations 
-                on the left and add them to the line chart to explore and comparetheir progress in real time. In the menu above the chart users can filter by 
-                different phases, epochs, iterations and actions of the RL model/agent, beside the option to select different tabs with agent logs, visited states, 
-                hyperparameters and learned policies.
-            </p>
+            <div class="media-container">
+                <img src="autorlx_dashboard.png" alt="AutoRLX Dashboard" class="dashboard-image">
+                <p class="dashboard-caption">
+                    <strong>Agent Leaderboard: </strong>Running a gym environment with different RL algorithms in AutoRL
+                    X's agent leaderboard. User can select different agent configurations
+                    on the left and add them to the line chart to explore and compare their progress in real time. In
+                    the menu above the chart users can filter by
+                    different phases, epochs, iterations and actions of the RL model/agent, beside the option to select
+                    different tabs with agent logs, visited states,
+                    hyperparameters and learned policies.
+                </p>
+                <img src="autorlxshorttms.gif" alt="AutoRLX Demo" class="demo-gif">
+                <p class="dashboard-caption"> <strong> 3D Visualization in Edit Gym:</strong> Users can create flexible
+                    TypeScript code to design a 3D environment that dynamically visualizes an agent's actions withon AutoRL X. This
+                    example showcases agent trajectories within a simulated gym, this helps for improved interpretability and
+                    insights into RL agent behavior.
+                </p>
+            </div>
         </section>
 
         <!-- Installation Section -->
@@ -156,11 +167,10 @@
                                 processes. It provides real-time web-based visualizations and intuitive interfaces for
                                 decision
                                 optimization, making RL accessible and effective for diverse applications.
-                            </p>
-                            <p class="bx--type-body-long-02">
                                 By bridging the gap between complex RL workflows and user-friendly tools, AutoRL X
                                 empowers
-                                industries such as healthcare, robotics, and autonomous systems to tackle real-world
+                                industries such as healthcare, robotics, production, and autonomous systems to tackle
+                                real-world
                                 challenges
                                 with confidence and efficiency.
                             </p>
@@ -206,7 +216,7 @@
                         <div class="bx--tile">
                             <p class="bx--type-body-long-02">
                                 For support or inquiries, reach out to us at <a href="mailto:support@autorlx.com"
-                                    class="text-primary">support@autorlx.com</a> or write an issue in our GitHub
+                                    class="text-primary">contact@autorlx.com</a> or write an issue in our GitHub
                                 repository.
                             </p>
                         </div>
@@ -304,8 +314,8 @@
             });
         });
 
-        // Dashboard image animation
-        const dashboardImage = document.querySelector('.dashboard-section .dashboard-image');
+        // Dashboard media animations
+        const dashboardMedia = document.querySelectorAll('.dashboard-section .dashboard-image, .dashboard-section .demo-gif');
         const dashboardObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -315,7 +325,7 @@
             });
         }, { threshold: 0.2 });
 
-        dashboardObserver.observe(dashboardImage);
+        dashboardMedia.forEach(el => dashboardObserver.observe(el));
     </script>
 </body>
 
