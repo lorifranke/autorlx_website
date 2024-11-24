@@ -128,8 +128,10 @@
                 </p>
                 <img src="autorlxshorttms.gif" alt="AutoRLX Demo" class="demo-gif">
                 <p class="dashboard-caption"> <strong> 3D Visualization in Edit Gym:</strong> Users can create flexible
-                    TypeScript code to design a 3D environment that dynamically visualizes an agent's actions withon AutoRL X. This
-                    example showcases agent trajectories within a simulated gym, this helps for improved interpretability and
+                    TypeScript code to design a 3D environment that dynamically visualizes an agent's actions withon
+                    AutoRL X. This
+                    example showcases agent trajectories within a simulated gym, this helps for improved
+                    interpretability and
                     insights into RL agent behavior.
                 </p>
             </div>
@@ -215,15 +217,28 @@
                     <div class="bx--col-lg-12">
                         <div class="bx--tile">
                             <p class="bx--type-body-long-02">
-                                For support or inquiries, reach out to us at <a href="mailto:support@autorlx.com"
-                                    class="text-primary">contact@autorlx.com</a> or write an issue in our GitHub
-                                repository.
+                                For support, feel free to reach us at <span id="support-email"></span> or submit an
+                                issue on our
+                                <a href="https://github.com/lorifranke/autorlx" target="_blank"
+                                    class="text-primary">GitHub repository</a>.
+                                For general inquiries, partnership opportunities, or collaboration requests, contact us
+                                at
+                                <span id="contact-email"></span>.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <script>
+            // Obfuscated email addresses to prevent scraping
+            document.getElementById('support-email').innerHTML =
+                '<a href="mailto:support@autorlx.com" class="text-primary">support@autorlx.com</a>';
+            document.getElementById('contact-email').innerHTML =
+                '<a href="mailto:contact@autorlx.com" class="text-primary">contact@autorlx.com</a>';
+        </script>
+
 
         <!-- Footer -->
         <footer class="footer">
