@@ -4,11 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoRL X Labs</title>
+    <title>AutoRL X Labs | Simplifying Reinforcement Learning</title>
+    <meta name="description"
+        content="AutoRL X Labs simplifies reinforcement learning with interactive visualizations, intuitive tools, and real-time decision optimization for diverse industries.">
     <!-- Carbon Design System CSS -->
     <link rel="stylesheet" href="https://unpkg.com/@carbon/styles/css/styles.css">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Additional Meta Tags -->
+    <meta name="keywords"
+        content="Reinforcement Learning, AutoRL, AI optimization, RL tools, Machine Learning, RL visualization">
+    <meta name="author" content="AutoRL X Labs">
+    <!-- Social Sharing Metadata -->
+    <meta property="og:title" content="AutoRL X Labs | Simplifying Reinforcement Learning">
+    <meta property="og:description"
+        content="Interactive tools and visualizations for optimizing reinforcement learning processes. Ideal for autonomous driving, robotics, and more.">
+    <meta property="og:image" content="https://autorlx.com/images/autorlx_dashboard.png">
+    <meta property="og:url" content="https://autorlx.com">
+    <meta property="og:type" content="website">
 </head>
 
 <body class="bx--body">
@@ -130,26 +143,33 @@
         <!-- Dashboard Section -->
         <section class="dashboard-section">
             <div class="media-container">
-                <img src="autorlx_dashboard.png" alt="AutoRLX Dashboard" class="dashboard-image">
+                <img src="autorlx_dashboard.png"
+                    alt="Screenshot of the AutoRLX Dashboard showcasing an agent leaderboard and real-time progress comparison"
+                    class="dashboard-image">
                 <p class="dashboard-caption">
                     <strong>Agent Leaderboard: </strong>Running a gym environment with different RL algorithms in AutoRL
-                    X's agent leaderboard. User can select different agent configurations
-                    on the left and add them to the line chart to explore and compare their progress in real time. In
+                    X's agent leaderboard. Users can select different agent configurations
+                    on the left and add them to the line chart to explore and compare their progress in real-time. In
                     the menu above the chart users can filter by
-                    different phases, epochs, iterations and actions of the RL model/agent, beside the option to select
+                    different phases, epochs, iterations, and actions of the RL model/agent, besides the option to
+                    select
                     different tabs with agent logs, visited states,
-                    hyperparameters and learned policies.
+                    hyperparameters, and learned policies.
                 </p>
-                <img src="autorlxshorttms.gif" alt="AutoRLX Demo" class="demo-gif">
-                <p class="dashboard-caption"> <strong> 3D Visualization in Edit Gym:</strong> Users can create flexible
-                    TypeScript code to design a 3D environment that dynamically visualizes an agent's actions withon
+                <img src="autorlxshorttms.gif"
+                    alt="Demo GIF of AutoRLX showcasing 3D visualization of agent trajectories in a simulated gym environment"
+                    class="demo-gif">
+                <p class="dashboard-caption">
+                    <strong>3D Visualization in Edit Gym:</strong> Users can create flexible
+                    TypeScript code to design a 3D environment that dynamically visualizes an agent's actions within
                     AutoRL X. This
-                    example showcases agent trajectories within a simulated gym, this helps for improved
+                    example showcases agent trajectories within a simulated gym, providing improved
                     interpretability and
                     insights into RL agent behavior.
                 </p>
             </div>
         </section>
+
 
         <!-- Installation Section -->
         <section id="installation" class="installation-section fade-in">
@@ -213,7 +233,8 @@
                                 <a href="https://dl.acm.org/doi/10.1145/3670692" target="_blank"
                                     class="text-primary">ACM publication</a>.
                             </p>
-                            <img src="system_architecture.png" alt="AutoRL X System Architecture"
+                            <img src="system_architecture.png"
+                                alt="Diagram illustrating the system architecture of AutoRL X, including its integration with ARLO and Svelte.js"
                                 class="architecture-image">
                         </div>
                     </div>
@@ -359,7 +380,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             const hamburger = document.querySelector('.hamburger-menu');
             const mobileMenu = document.querySelector('.mobile-menu');
-            
+
             // Debug log
             console.log('Hamburger:', hamburger);
             console.log('Mobile Menu:', mobileMenu);
